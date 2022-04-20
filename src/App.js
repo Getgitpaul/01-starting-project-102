@@ -5,39 +5,50 @@ function App() {
 
   <div className={classes.container}>
 
-      <header>
-        <div>
+      <div className={classes.blueGreenContainer}>
+
+        <div className={classes.blueColor}>
 
           <h1> This is Blue </h1>
 
         </div>
 
-      </header>
-
-
-          <section className={classes.main} >
+          <div className={classes.greenAndYelloContainer}>
+          <div className={classes.green} >
               <h2>Green as you</h2>
-          </section>
+          </div>
 
 
-          <aside className={classes.sidebar}>
-              <h3 >Yellow for the sun</h3>
-          </aside>
+          <div className={classes.yellow}>
+              <h3 >Yellow for the sun </h3>
 
+              </div>
+          </div>
 
-      <footer>
+          </div>
+
+          <div className={classes.redAndWhite}>
+      <div className={classes.red}>
+
           <h3>White is the new red</h3>
 
-      </footer>
-      <div className={classes.leftfooter}> Left side  </div>
+      </div>
 
+      <div className={classes.white}> White is Pure
+       </div>
 
-      <div className= {classes.secondfooter}>
+       </div>
+
+       <div className={classes.blackAndViolet}>
+      <div className= {classes.violetColor}>
+
       <h4> This is Violet </h4>
       </div>
-      <div className= {classes.lastthing}>
+      <div className= {classes.blackColor}>
       <h5> THis is Black </h5>
       </div>
+      </div>
+
   </div>
 
 

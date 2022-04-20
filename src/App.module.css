@@ -11,6 +11,7 @@
   width: 100%;
   overflow: hidden;
   /* flex-wrap: wrap; */
+  /* flex-direction: column; */
 }
 
 * {
@@ -23,67 +24,92 @@ a {
     text-decoration: none;
 }
 
-header {
+.blueGreenContainer {
   display: flex;
-   height: 40%;
-   border: 5px solid purple;
-   float: left;
-   width: 50%;
+  flex-direction: row;
+  height: 40%;
+  /* flex: 1; */
+}
+
+.blueColor {
+   display: flex;
+   flex: 0.5;
    background-color: blue;
    cursor: wait;
    /* grid-column-start:1;
-   grid-column-end: 4; */
-   /* transition: all 1s; */
+   grid-column-end: 4; /
+   / transition: all 1s; */
 }
 
-.main {
+.greenAndYelloContainer {
+  display: flex;
+  flex-direction: column;
+  flex:0.5;
+  /* height:40%; */
 
-  height: 20%;
-  width: 50%;
+}
+
+.green {
+  /* height: 20%; */
   color: white;
-   background-color: green;
-   display:flex;
-
-}
-
-.sidebar {
-   height: 20%;
-   width: 50%;
-   color: red;
-  background-color: yellow;
+  background-color: green;
+  flex: 0.5;
   display:flex;
 }
 
+.yellow {
+  /* height: 40%; */
+  /* width: 50%; */
+  flex: 0.5;
+  color: red;
+  background-color: yellow;
 
-footer {
-   height: 30%;
-   width: 75%;
+}
+
+.redAndWhite{
+  display: flex;
+  flex:1;
+  flex-direction:row;
+  height:30%;
+
+}
+.red {
+   /* height: 30%;
+   width: 75%; */
+   flex:0.75;
    color: white;
-   float:right;
    background-color: red;
 }
 
-.leftfooter{
-  height: 30%;
-  width: 25%;
+.white{
+  /* height: 30%;
+  width: 25%; */
+  flex:0.25;
   color: red;
  background-color: white;
  display:flex;
 }
-.secondfooter {
-   height: 30%;
-   width: 60%;
+
+.blackAndViolet{
+  height:30%;
+  display:flex;
+
+}
+
+.violetColor {
+   /* height: 30%;
+   width: 60%; */
    color: red;
   background-color: violet;
-  float:right;
+  flex:0.6;
   display:flex;
 }
 
-.lastthing{
-  height: 30%;
-  width: 40%;
+.blackColor{
+  /* height: 30%;
+  width: 40%; */
+  flex:0.4;
   color: red;
-  float:right;
  background-color: black;
 
 }
